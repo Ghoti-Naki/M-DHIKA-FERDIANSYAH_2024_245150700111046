@@ -48,6 +48,7 @@ public class GridManager : MonoBehaviour
             CheckWinCondition();
         }
     }
+
     public bool IsCellOccupied(Vector2Int position)
     {
         return _gridObjects.ContainsKey(position);
@@ -61,6 +62,7 @@ public class GridManager : MonoBehaviour
         }
         return null;
     }
+
     public bool IsGoalAtPosition(Vector2Int pos)
     {
         return _goalPositions.Contains(pos);
