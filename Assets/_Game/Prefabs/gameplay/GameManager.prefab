@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GridManager
   winTextPanel: {fileID: 0}
+  gameplayUI: {fileID: 0}
 --- !u!114 &4008771935738479183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6e658a3d93e3224da97c9340e686cc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
-  moveClip: {fileID: 8300000, guid: 189b8228f5cb0c341bbc2af834eb1481, type: 3}
-  pushClip: {fileID: 8300000, guid: 3750cb04fcad829419c6f850bb86c816, type: 3}
+  moveClip: {fileID: 8300000, guid: b8dc30bedee541e42b86259983ebbbe5, type: 3}
+  pushClip: {fileID: 8300000, guid: 2516ed6b15412af42bc43ad418c9de83, type: 3}
   winClip: {fileID: 8300000, guid: 57819c085065f904bbeee9913bb4c25c, type: 3}
   sfxSource: {fileID: 172461630493924344}

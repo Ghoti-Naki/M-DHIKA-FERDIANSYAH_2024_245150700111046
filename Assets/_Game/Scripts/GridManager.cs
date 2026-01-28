@@ -25,7 +25,6 @@ public class GridManager : MonoBehaviour
     {
         if (_gridObjects.ContainsKey(position))
         {
-            Debug.LogWarning($"Cell {position} is already occupied by {_gridObjects[position].name}");
             return;
         }
         _gridObjects[position] = obj;
@@ -70,7 +69,6 @@ public class GridManager : MonoBehaviour
     public void CheckWinCondition()
     {
         if (LevelFinished) return;
-
         if (_goalPositions.Count == 0) return;
 
         foreach (Vector2Int goalPos in _goalPositions)

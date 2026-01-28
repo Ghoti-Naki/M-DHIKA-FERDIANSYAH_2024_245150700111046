@@ -105,5 +105,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   _animator: {fileID: 0}
-  moveSpeed: 10
+  moveSpeed: 8
   GridPosition: {x: 0, y: 0}
