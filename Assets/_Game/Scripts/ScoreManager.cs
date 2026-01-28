@@ -1,14 +1,14 @@
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance { get; private set; }
 
     [Header("UI References")]
-    [SerializeField] private Text movesText;
-    [SerializeField] private Text highScoreText;
+    [SerializeField] private TMP_Text movesText;
+    [SerializeField] private TMP_Text highScoreText;
     [SerializeField] private GameObject newRecordObject;
 
     private int _currentMoves;

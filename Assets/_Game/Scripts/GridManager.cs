@@ -10,6 +10,8 @@ public class GridManager : MonoBehaviour
 
     [Header("UI Reference")]
     [SerializeField] private GameObject winTextPanel;
+    [SerializeField] private GameObject gameplayUI;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -51,6 +53,7 @@ public class GridManager : MonoBehaviour
     {
         return _gridObjects.ContainsKey(position);
     }
+
     public GameObject GetObjectAt(Vector2Int position)
     {
         if (_gridObjects.TryGetValue(position, out GameObject obj))
@@ -80,12 +83,16 @@ public class GridManager : MonoBehaviour
             }
         }
 
-        Debug.Log("LEVEL COMPLETE!");
         LevelFinished = true;
 
         if (winTextPanel != null)
         {
             winTextPanel.SetActive(true);
+        }
+
+        if (gameplayUI != null)
+        {
+            gameplayUI.SetActive(false);
         }
 
         ScoreManager.Instance.CompleteLevel();

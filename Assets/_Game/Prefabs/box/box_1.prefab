@@ -105,6 +105,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PushableBox
   moveSpeed: 8
-  _dustPrefab: {fileID: 0}
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
   onGoalColor: {r: 0.7735849, g: 0.7735849, b: 0.7735849, a: 1}
